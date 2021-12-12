@@ -1,5 +1,5 @@
 <?php
-  $cookie = '';
+  $cookie = file_get_contents('cookie.txt';
   $content = auto('https://mbasic.facebook.com/home.php?sk=h_chr', $cookie);
   preg_match('#target" value="(.+?)"#is', $content, $id_user);
   $id_user = $id_user['1'];
